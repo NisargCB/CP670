@@ -2,4 +2,6 @@
     <string name="app_name">My_App_235838530_CP670</string>
     <string name="hello_msg">Hello world!</string>
     <string name="ButtonText">I\’m a button</string>
+    <string name="login">login</string>
+    <string name="pass">password</string>
 </resources>
