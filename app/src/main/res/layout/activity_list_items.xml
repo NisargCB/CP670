@@ -7,6 +7,7 @@
     tools:context=".ListItemsActivity">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="2dp"
@@ -15,6 +16,7 @@
         android:rowCount="2"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
+
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
@@ -35,9 +37,9 @@
             android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What does this do?"
             android:layout_columnWeight="1"
-            android:gravity="fill"/>
+            android:gravity="fill"
+            android:text="What does this do?" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -49,4 +51,29 @@
 
 
     </GridLayout>
+
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="103dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Logout_button"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/Logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="33dp"
+        android:text="Log out"
+        app:layout_constraintEnd_toStartOf="@+id/home_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
