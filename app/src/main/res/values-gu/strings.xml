@@ -4,10 +4,14 @@
     <string name="hello_msg">Kem cho</string>
     <string name="ButtonText">aa button chhe</string>
     <string name="login">Pravēśa karō</string>
+    <string name="sign_in">Sā\'ina ina karō</string>
+    <string name="logout">Lŏga ā\'uṭa</string>
     <string name="pass">Pāsavarḍa</string>
-    <string name="ok">Yes</string>
-    <string name="cancel">No\n</string>
-    <string name="dialog_title">End Activity?</string>
-    <string name="dialog_message">Press yes to return to login, no to stay in item list </string>
-
+    <string name="ok">Barābar</string>
+    <string name="cancel">Rada karō\n</string>
+    <string name="dialog_title">Pravr̥tti samāpta karī\'ē?</string>
+    <string name="dialog_message">Lōgina para pāchā āvavā māṭē hā dabāvō, ā\'iṭama lisṭamāṁ rahēvā māṭē nā dabāvō</string>
+    <string name="back">Pāchā</string>
+    <string name="check_box">Cēkabŏksa</string>
+    <string name="radio_btn">Rēḍīyō baṭana</string>
 </resources>

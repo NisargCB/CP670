@@ -3,11 +3,15 @@
     <string name="app_name">My_App_235838530_CP670</string>
     <string name="hello_msg">Hello world!</string>
     <string name="ButtonText">I\’m a button</string>
-    <string name="login">login</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign in</string>
+    <string name="logout">Log out</string>
     <string name="pass">password</string>
     <string name="ok">Yes</string>
     <string name="cancel">No\n</string>
     <string name="dialog_title">End Activity?</string>
     <string name="dialog_message">Press yes to return to login, no to stay in item list </string>
-
+    <string name="back">Back</string>
+    <string name="check_box">CheckBox</string>
+    <string name="radio_btn">RadioButton</string>
 </resources>
