@@ -5,4 +5,9 @@
     <string name="ButtonText">aa button chhe</string>
     <string name="login">Pravēśa karō</string>
     <string name="pass">Pāsavarḍa</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No\n</string>
+    <string name="dialog_title">End Activity?</string>
+    <string name="dialog_message">Press yes to return to login, no to stay in item list </string>
+
 </resources>

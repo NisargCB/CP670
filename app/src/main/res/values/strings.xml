@@ -1,7 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My_App_235838530_CP670</string>
     <string name="hello_msg">Hello world!</string>
     <string name="ButtonText">I\’m a button</string>
     <string name="login">login</string>
     <string name="pass">password</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No\n</string>
+    <string name="dialog_title">End Activity?</string>
+    <string name="dialog_message">Press yes to return to login, no to stay in item list </string>
+
 </resources>
