@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE = 10;
     private Button btn;
     private Button btn2;
+    private Button start_chat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn = (Button) findViewById(R.id.button2);
         btn2 = (Button) findViewById(R.id.button4);
+        start_chat = (Button) findViewById(R.id.start_chat);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +38,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(myInt,REQUEST_CODE);
             }
             });
+
+        start_chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+            Log.i("Main Activity","User clicked Start Chat");
+
+            Intent myInt = new Intent(getApplicationContext(),ChatWindow.class);
+            startActivity(myInt);
+            }}
+        );
+
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -78,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("running","running onDestroy in Main Activity");
 
     }
+
 
 
 
