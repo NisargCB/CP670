@@ -1,7 +1,5 @@
 package com.example.myapp1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,12 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 10;
     private Button btn;
     private Button btn2;
     private Button start_chat;
+    private Button test_toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         btn = (Button) findViewById(R.id.button2);
         btn2 = (Button) findViewById(R.id.button4);
         start_chat = (Button) findViewById(R.id.start_chat);
+        test_toolbar=(Button)findViewById(R.id.test_toolbar_button);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,9 +53,21 @@ public class MainActivity extends AppCompatActivity {
             }}
         );
 
+        test_toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i("Main Activity", "User Clicked TestToolbar");
+                Intent intent=new Intent(MainActivity.this, TestToolbar.class);
+                startActivity(intent);
+//                Intent myInt = new Intent(getApplicationContext(),TestToolbar.class);
+//                startActivity(myInt);
+            }
+
+
+        });
 
     }
-    @Override
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
